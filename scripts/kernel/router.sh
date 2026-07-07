@@ -21,6 +21,12 @@ cmd_version
 
 ;;
 
+about)
+
+cmd_about
+
+;;
+
 *)
 
 echo
