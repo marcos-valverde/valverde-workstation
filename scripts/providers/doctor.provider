@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+source "$ROOT_DIR/scripts/commands/doctor.sh"
+
+core_register_command "doctor" "cmd_doctor" "Executa validações do ambiente."

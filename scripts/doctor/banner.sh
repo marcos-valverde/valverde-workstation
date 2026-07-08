@@ -12,7 +12,7 @@ color_info "Codename : $APP_CODENAME"
 
 term_blank
 
-echo "$MOTTO"
+color_info "$MOTTO"
 
 term_blank
 

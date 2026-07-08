@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+source "$ROOT_DIR/scripts/commands/help.sh"
+source "$ROOT_DIR/scripts/commands/version.sh"
+source "$ROOT_DIR/scripts/commands/info.sh"
+
+core_register_command "help" "cmd_help" "Exibe esta ajuda."
+core_register_command "version" "cmd_version" "Exibe a versão da Workstation."
+core_register_command "info" "cmd_info" "Exibe informações da plataforma."
+core_register_command "about" "cmd_info" "Exibe informações da plataforma."

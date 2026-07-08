@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmd_info() {
 
 term_title "$APP_NAME"
@@ -9,7 +11,7 @@ color_info "Licença   : $LICENSE"
 
 term_blank
 
-echo "$MOTTO"
+color_info "$MOTTO"
 
 term_blank
 

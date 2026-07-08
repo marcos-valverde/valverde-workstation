@@ -1,13 +1,15 @@
 doctor_php() {
 
-if validator_command_exists php; then
+    if validator_command_exists php; then
 
-    log_success "PHP encontrado."
+        log_success "PHP encontrado."
+        return 0
 
-else
+    else
 
-    log_error "PHP não encontrado."
+        log_error "PHP não encontrado."
+        return 1
 
-fi
+    fi
 
 }

@@ -11,25 +11,25 @@ COLOR_CYAN="\033[0;36m"
 COLOR_BOLD="\033[1m"
 
 color_title() {
-    echo -e "${COLOR_BOLD}${COLOR_CYAN}$1${COLOR_RESET}"
+    printf '%b\n' "${COLOR_BOLD}${COLOR_CYAN}$1${COLOR_RESET}"
 }
 
 color_info() {
-    echo -e "${COLOR_BLUE}ℹ${COLOR_RESET} $1"
+    printf '%b\n' "${COLOR_BLUE}ℹ${COLOR_RESET} $1"
 }
 
 color_success() {
-    echo -e "${COLOR_GREEN}✔${COLOR_RESET} $1"
+    printf '%b\n' "${COLOR_GREEN}✔${COLOR_RESET} $1"
 }
 
 color_warning() {
-    echo -e "${COLOR_YELLOW}⚠${COLOR_RESET} $1"
+    printf '%b\n' "${COLOR_YELLOW}⚠${COLOR_RESET} $1"
 }
 
 color_error() {
-    echo -e "${COLOR_RED}✖${COLOR_RESET} $1"
+    printf '%b\n' "${COLOR_RED}✖${COLOR_RESET} $1"
 }
 
 color_step() {
-    echo -e "${COLOR_CYAN}➜${COLOR_RESET} $1"
+    printf '%b\n' "${COLOR_CYAN}➜${COLOR_RESET} $1"
 }

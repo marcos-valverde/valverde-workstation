@@ -2,16 +2,16 @@
 
 cmd_help() {
 
-cat <<EOF
+    local command
+    local description
 
-Comandos disponíveis
+    term_title "Comandos disponíveis"
 
-  valverde help
-      Exibe esta ajuda.
+    while IFS= read -r command; do
+        description="$(core_command_description "$command")"
+        color_info "valverde $command - $description"
+    done < <(core_registered_commands)
 
-  valverde version
-      Exibe a versão da Workstation.
-
-EOF
+    term_blank
 
 }

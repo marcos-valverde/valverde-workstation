@@ -4,4 +4,4 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
 export ROOT_DIR
 
-source "$ROOT_DIR/scripts/core/bootstrap.sh" "$@"
+source "$ROOT_DIR/scripts/kernel/bootstrap.sh" "$@"

@@ -4,8 +4,12 @@ term_clear() {
     clear
 }
 
+term_print() {
+    printf '%s\n' "$1"
+}
+
 term_blank() {
-    echo
+    printf '\n'
 }
 
 term_line() {
